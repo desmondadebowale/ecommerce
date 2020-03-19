@@ -16,8 +16,10 @@
           
         <Products v-for="cardproduct in productdisplay" :listproducts = "cardproduct" :key="cardproduct.id"/>
       </div>
-        </div>
-      </div>
+    </div>
+    
+  </div>
+      <Footer />
   </div>
 </template>
 
@@ -26,6 +28,7 @@ import Header from './components/Header.vue'
 import Products from './components/Products'
 import Category from './components/Category'
 import productslider from './components/productslider'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
@@ -33,7 +36,8 @@ export default {
     Header,
     Products,
     Category,
-    productslider
+    productslider,
+    Footer
   },
   data(){
     return {
